@@ -31,8 +31,8 @@ function App() {
       </div>
       <div className='header'>
         <h1 className='title'>Rick and Morty</h1>
-        <form onSubmit={handleSubmit}>
-          <input ref={inputLocation} type="text" />
+        <form className='search' onSubmit={handleSubmit}>
+          <input placeholder='Search...' ref={inputLocation} type="text" />
           <button>Search</button>
         </form>
         {

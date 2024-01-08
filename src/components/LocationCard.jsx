@@ -2,7 +2,8 @@ import "./styles/LocationCard.css";
 
 const LocationCard = ({ location }) => {
   return (
-    <article className="item">
+    <section className="details">
+          <article className="item">
       <h2 className="text-item">{location?.name}</h2>
         <ul className="container-item">
           <li className="lit">
@@ -19,6 +20,8 @@ const LocationCard = ({ location }) => {
           </li>
         </ul>
     </article>
+    </section>
+
   );
 };
 
