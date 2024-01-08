@@ -1,16 +1,25 @@
+import "./styles/LocationCard.css";
 
 const LocationCard = ({ location }) => {
-    return (
-        <article>
-        <h2>{location?.name}</h2>
-        <ul>
-            <li><span>Type:</span><span>{location?.type}</span></li>
-            <li><span>Dimension:</span><span>{location?.dimension}</span></li>
-            <li><span>Population:</span><span>{location?.residents.length}</span></li>
+  return (
+    <article className="item">
+      <h2 className="text-item">{location?.name}</h2>
+        <ul className="container-item">
+          <li className="lit">
+            <span> <strong>Type:</strong></span>
+            <span>{location?.type}</span>
+          </li>
+          <li className="lit">
+            <span><strong>Dimension:</strong></span>
+            <span>{location?.dimension}</span>
+          </li>
+          <li className="lit">
+            <span><strong>Population:</strong></span>
+            <span>{location?.residents.length}</span>
+          </li>
         </ul>
-     </article>
-    )
+    </article>
+  );
+};
 
-}
-
-export default LocationCard
+export default LocationCard;

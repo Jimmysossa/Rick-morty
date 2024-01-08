@@ -27,7 +27,10 @@ function App() {
   return (
     <>
       <div>
-        <h1>Rick and Morty</h1>
+        <img src="/banner.jpg" alt="" />
+      </div>
+      <div className='header'>
+        <h1 className='title'>Rick and Morty</h1>
         <form onSubmit={handleSubmit}>
           <input ref={inputLocation} type="text" />
           <button>Search</button>

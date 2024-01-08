@@ -1,0 +1,24 @@
+.item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    max-width: 550px;
+    margin-bottom: 16px;
+    padding: 14px;
+    background-color: #084868;
+    border-radius: 1rem;
+    justify-content: center;
+}
+.lit {
+    padding: 1.3rem;
+    display: grid;
+}
+
+.container-item{
+ display: flex;
+ flex-direction: row;
+}
+
+
